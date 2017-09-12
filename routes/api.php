@@ -11,7 +11,7 @@
 |
 */
 
-$api = $app->make(Dingo\Api\Routing\Router::class);
+$api = app()->make(Dingo\Api\Routing\Router::class);
 
 $api->version('v1', function ($api) {
     $api->post('/auth/login', [
